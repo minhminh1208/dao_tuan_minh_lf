@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Hello, My Friend</h1>
+  <p class="lead">The people who mean the most to me</p>
+  <hr class="my-4">
+  <p>Best Wishes For You</p>
+  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
+  <%= link_to "Back to friends", friends_path %>
+</div>
+
+<%= render @friend %>
+
+<div>
+
+  <%= button_to "Destroy this friend", @friend, method: :delete %>
+</div>
